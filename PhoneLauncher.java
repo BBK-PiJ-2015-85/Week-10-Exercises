@@ -8,10 +8,10 @@ public class PhoneLauncher {
 		myPhone.call("07899665425");
 		myPhone.playGame("Snake");
 		myPhone.call("02564897456");
-		myPhone.call("02468987523");
+		myPhone.call("00468987523");
 		myPhone.call("07845235641");
 		myPhone.call("02065498756");
-		myPhone.call("07986552444");
+		myPhone.call("00986552444");
 		myPhone.call("02468987523");
 		myPhone.printLastNumbers();
 		myPhone.browseWeb("bbc.co.uk");

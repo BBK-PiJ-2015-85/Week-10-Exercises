@@ -13,13 +13,17 @@ public class MobilePhone extends OldPhone {
 		System.out.println("Let's play " + game + "!");
 	}
 	
-	@Override
-	public void call(String number) {
-		super.call(number);
+	public void storeDialledNumber(String number) {
 		for (int i = 9; i >= 1; i--) {
 			dialledNumbers[i] = dialledNumbers[i - 1];
 		}
 		dialledNumbers[0] = number;
+	}
+	
+	@Override
+	public void call(String number) {
+		super.call(number);
+		storeDialledNumber(number);
 	}
 	
 	public void printLastNumbers() {
