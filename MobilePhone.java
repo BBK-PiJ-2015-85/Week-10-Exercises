@@ -1,7 +1,8 @@
 public class MobilePhone extends OldPhone {
 	private String[] dialledNumbers;
 	
-	public MobilePhone() {
+	public MobilePhone(String brand) {
+		super(brand);
 		dialledNumbers = new String[10];
 	}
 	

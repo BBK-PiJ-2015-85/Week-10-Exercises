@@ -1,6 +1,18 @@
 public class PhoneLauncher {
 	public static void main(String[] args) {
-		SmartPhone myPhone = new SmartPhone();
+		
+		Phone oldPhone = new OldPhone("Nokia");
+		System.out.println(((OldPhone)oldPhone).getBrand());
+		oldPhone.call("999");
+		
+		MobilePhone mobilePhone = new MobilePhone("Blackberry");
+		System.out.println(mobilePhone.getBrand());
+		mobilePhone.call("112");
+		mobilePhone.playGame("Tetris");
+		
+		SmartPhone myPhone = new SmartPhone("Sony");
+		
+		System.out.println(myPhone.getBrand());
 		myPhone.call("123");
 		myPhone.call("01582467259");
 		myPhone.call("01727896452");
